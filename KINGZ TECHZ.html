@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINGZ ENT TECHZ | Tool Rentals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e74c3c;
+            --accent: #3498db;
+            --accent2: #9b59b6;
+            --dark: #121a24;
+            --darker: #0d121b;
+            --light: #ecf0f1;
+            --success: #2ecc71;
+            --card-bg: #1a252f;
+            --text-light: #f0f0f0;
+            --text-gray: #b0b0b0;
+            --border: #2a3a4d;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
+            color: var(--text-light);
+            line-height: 1.6;
+            min-height: 100vh;
+            position: relative;
+        }
+        header {
+            background: rgba(18, 26, 36, 0.95);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            background: rgba(0,0,0,0.2);
+            padding: 5px 10px;
+            border-radius: 8px;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+        }
+        .logo span {
+            color: var(--secondary);
+        }
+        .logo-name {
+            display: flex;
+            align-items: center;
+        }
+        .logo-name span:first-child {
+            margin-right: 5px;
+        }
+        .logo-name span:nth-child(2) {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .tagline {
+            font-size: 0.9rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-top: 3px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        .nav-tab {
+            color: var(--text-light);
+            text-decoration: none;
+            position: relative;
+            padding: 0.5rem 0;
+            white-space: nowrap;
+            font-weight: 600; /* Increased font weight */
+            font-size: 1.05rem; /* Slightly larger font */
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nav-tab:hover {
+            color: var(--accent);
+        }
+        .nav-tab.active {
+            color: var(--secondary);
+        }
+        .nav-tab i {
+            font-size: 1.1rem;
+        }
+        .header-actions {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            position: relative;
+        }
+        .user-icon {
+            font-size: 1.3rem;
+            cursor: pointer;
+        }
+        .user-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 0.5rem 0;
+            min-width: 150px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border: 1px solid var(--border);
+            display: none;
+            z-index: 1000;
+        }
+        .user-dropdown a {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: var(--text-light);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .user-dropdown a:hover {
+            background: rgba(255,255,255,0.1);
+            color: var(--accent);
+        }
+        .header-actions:hover .user-dropdown {
+            display: block;
+        }
+        /* ...rest of HTML content omitted for preview... */
